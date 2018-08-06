@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Delloite Assignment</title>
+	<link rel="icon" href="img/favicon.ico" type="image/png" sizes="16x16">
+
+	<link rel="stylesheet" href="style/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.common-material.min.css" />
+	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.material.min.css" />
+	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.material.mobile.min.css" />
+
+	<script src="https://kendo.cdn.telerik.com/2018.2.620/js/jquery.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/2018.2.620/js/kendo.all.min.js"></script>
+	<script src="js/kendo-chart.js"></script>
+
+</head>
+<body>
+	<!-- nav-bar-->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/deloitte-logo.png" alt="deloitte-company-logo" class="logo">
+			</a>
+		</div>  
+	</nav>
+	<!-- / nav-bar-->
+	
+	<!-- main body -->
+	<div class="container-fluid">
+		<div class="container">
+			<!-- main body -->
+			<div class="row">
+				<div class="col-md-12 main-body">
+					<!-- section title -->
+					<div class="row section-title">
+						<div class="col-md-12">
+							<h4>My Skills Representation</h4>
+						</div>
+					</div>
+					<!-- / section title -->
+					
+					<!-- pie charts -->
+					<div class="row pie-charts">
+						<!-- pie chart for uiux -->
+						<div class="col-md-6">
+							<div class="demo-section k-content wide">
+								<div id="chart-uiux"></div>
+							</div>
+						</div>
+						<!--  / pie chart for uiux -->
+
+						<!-- pie chart for fornend -->
+						<div class="col-md-6">
+							<div class="demo-section k-content wide">
+								<div id="chart-frontend"></div>
+							</div>
+						</div>
+						<!-- / pie chart for fornend -->
+					</div>
+
+					<!-- / pie charts -->
+					
+					<!-- section title -->
+					<div class="row section-title">
+						<div class="col-md-12">
+							<h4>Skill Readiness Vs Salary</h4>
+						</div>
+					</div>
+					<!-- / section title -->
+
+					<!-- / column-charts -->
+					<div class="row column-charts">
+						<div class="col-md-12">
+							<div class="demo-section k-content wide">
+								<div id="chart-salary"></div>
+							</div>
+						</div>
+					</div>
+					<!-- / column-charts -->
+
+					<!-- section title -->
+					<div class="row section-title">
+						<div class="col-md-12">
+							<h4>My Core Capabilities</h4>
+						</div>
+					</div>
+					<!-- / section title -->
+
+					<!-- accordion -->
+					<div class="row">
+						<div class="col-md-12">
+							<div id="accordion">
+								<!-- card for ux skills -->
+								<div class="card">
+									<!-- accordion header -->
+									<div class="card-header">
+										<a class="card-link" data-toggle="collapse" href="#collapseOne">
+											User Experience Skills 
+											<i class="fa fa-chevron-circle-down float-right" aria-hidden="true"></i>
+										</a>
+									</div>
+									<!-- / accordion header -->
+
+									<!-- accordion body -->
+									<div id="collapseOne" class="collapse show" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li>User requirement geathering</li>
+												<li>User requirement analyzing</li>
+												<li>User research</li>
+												<li>User story, user flow, user journey designing</li>
+												<li>Wireframe designing</li>
+												<li>User testing</li>
+											</ul>
+										</div>
+									</div>
+									<!-- / accordion body -->
+								</div>
+								<!-- / card for user exp skills -->
+
+								<!-- card for ui skills -->
+								<div class="card">
+									<!-- accordion header -->
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+											User Interface Skills 
+											<i class="fa fa-chevron-circle-down float-right" aria-hidden="true"></i>
+										</a>
+									</div>
+									<!-- / accordion header -->
+
+									<!-- accordion body -->
+									<div id="collapseTwo" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li>Mockup designing</li>
+												<li>Prototype designing</li>
+												<li>Interaction designing</li>
+												<li>Graphic Designing</li>
+												<li>Animation Designing</li>
+											</ul>
+										</div>
+									</div>
+									<!-- / accordion body -->
+								</div>
+								<!-- / card for ui skills -->
+								
+								<!-- card for frontend skills -->
+								<div class="card">
+									<!-- accordion header -->
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+											Front End Development
+											<i class="fa fa-chevron-circle-down float-right" aria-hidden="true"></i>
+										</a>
+									</div>
+									<!-- / accordion header -->
+
+									<!-- accordion body -->
+									<div id="collapseThree" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+											<ul>
+												<li>HTML5, CSS3 and JS web design and frontend developing</li>
+												<li>Bootstrap, Skeleton, Kendo UI, jQuery framework. </li>
+												<li>ASP.NET MVC, PHP application frontend designing </li>
+												<li>CMS web customization and template designing (Wordpress, Drupal, Joomla, Magento) </li>
+												<li>AngularJS, ReactJS, React Native mobile (android and iOS) web and mobile front end designing and developing</li>
+												<li>PC game designing and development</li>
+											</ul>
+										</div>
+									</div>
+									<!-- / accordion body -->
+								</div>
+								<!-- / card for frontend skills -->
+							</div>
+						</div>
+					</div>
+					<!-- / accordion -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / main body -->
+
+	<!-- boostrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- / boostrap js -->
+</body>
+</html>

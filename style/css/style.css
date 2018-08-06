@@ -1,0 +1,139 @@
+@font-face {
+  font-family: sourcesanspro-regular;
+  src: url(../../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: sourcesanspro-light;
+  src: url(../../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: sourcesanspro-semibold;
+  src: url(../../fonts/SourceSansPro-SemiBold.ttf);
+}
+
+/* line 28, ../sass/style.scss */
+body {
+  font-family: sourcesanspro-regular !important;
+}
+
+/* line 34, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0 !important;
+  color: #484848;
+}
+
+/* line 41, ../sass/style.scss */
+.container-fluid {
+  padding: 0;
+}
+
+/* line 48, ../sass/style.scss */
+.navbar.navbar-light {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+/* line 53, ../sass/style.scss */
+.navbar .container {
+  padding: 0;
+}
+/* line 59, ../sass/style.scss */
+.navbar .logo {
+  height: 35px;
+}
+
+/* line 67, ../sass/style.scss */
+.main-body {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 80px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  /* line 67, ../sass/style.scss */
+  .main-body {
+    padding: 20px;
+  }
+}
+/* line 82, ../sass/style.scss */
+.main-body .section-title {
+  margin-bottom: 30px;
+}
+/* line 88, ../sass/style.scss */
+.main-body .pie-charts {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  /* line 91, ../sass/style.scss */
+  .main-body .pie-charts .col-md-6:first-child {
+    margin-bottom: 30px;
+  }
+}
+/* line 101, ../sass/style.scss */
+.main-body .card {
+  border-bottom: none;
+  border-radius: 0;
+  border-color: #522582;
+}
+/* line 107, ../sass/style.scss */
+.main-body .card:first-child {
+  border-radius: 5px 5px 0 0;
+}
+/* line 111, ../sass/style.scss */
+.main-body .card:first-child .card-header {
+  border-radius: 5px 5px 0 0 !important;
+}
+/* line 119, ../sass/style.scss */
+.main-body .card:last-child {
+  border-radius: 0 0 5px 5px;
+  border-bottom: 1px solid #522582 !important;
+}
+/* line 124, ../sass/style.scss */
+.main-body .card:last-child .card-header {
+  border-radius: 0 0 5px 5px !important;
+}
+/* line 132, ../sass/style.scss */
+.main-body .card .card-header {
+  background-color: #fbf9fa;
+  border-radius: 0 !important;
+  border-bottom: none;
+  padding: 10px 15px;
+}
+/* line 139, ../sass/style.scss */
+.main-body .card .card-header a {
+  color: #272727;
+  display: block;
+}
+/* line 144, ../sass/style.scss */
+.main-body .card .card-header a i {
+  line-height: 1.6;
+  color: #522582;
+  font-size: 18px;
+}
+/* line 148, ../sass/style.scss */
+.main-body .card .card-header a i.fa {
+  transition: .5s transform ease-in-out;
+}
+/* line 156, ../sass/style.scss */
+.main-body .card .card-header a[data-toggle="collapse"] i {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 168, ../sass/style.scss */
+.main-body .card .card-header a[data-toggle="collapse"].collapsed i {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 183, ../sass/style.scss */
+.main-body .card .card-body {
+  border-top: 1px solid #522582;
+}
